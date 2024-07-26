@@ -1,0 +1,313 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+}
+main {
+    padding-top: 100px; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    font-size: 20px;
+    color: #f8765f;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: #f8765f;
+}
+
+.search input {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.hero img{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+ }
+ .hero .gif1{
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 54%;
+    right: 300px;
+    background: gray;
+ }
+
+ .tagline {
+    position: absolute;
+    top: 60%;
+    left: 900px;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+ }
+ .tagline::before{
+    content: "";
+    height: 2px;
+    width: 600px;
+    background-color:  #ff6347;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -3;
+ }
+
+ .tagline::after{
+    content: "";
+    height: 2px;
+    width: 600px;
+    background-color:  #ff6347;
+    position: absolute;
+    top: 50%;
+    left:0;
+    z-index: -2;
+ }
+ .hero span{
+    background-color: rgb(39, 34, 34);
+    padding: 0 23px;
+ }
+ .tag2{
+    position: absolute;
+    top: 70%;
+    left: 900px;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
+ }
+ 
+
+ .btn {
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #f8765f;
+}
+
+
+.intro{
+    margin-top: 80px;
+    height: 80vh;
+}
+.intro h1{
+    text-align: center;
+    color:#f8765f ;
+    font-size: 40px;
+    margin-top: 200px;
+}
+.intro .content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 130px;
+    gap: 15px;
+}
+
+.content p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+.content img{
+    width: 450px;
+    transition: 0.1s;
+}
+
+.content img:hover{
+    z-index: 2;
+    transform: scale(1,2);
+    
+}
+.Rec{
+    margin-top: 180px;
+    height: 80vh;
+}
+.Rec h1{
+    text-align: center;
+    color: #f8765f;
+    font-size: 40px;
+    margin-top: 130px;
+}
+
+.card {
+    display: inline-block;
+    width: 150px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 80px;
+}
+
+.card img {
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.17);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    border-top: 1px dashed #ff6347;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+
+.newsletter-signup {
+    padding: 20px;
+    text-align: center;
+    margin-top: 200px;
+    height: 30vh;
+}
+
+.newsletter-signup form {
+    margin-top: 40px;
+}
+
+.newsletter-signup h1{
+    font-size: 40px;
+    color: #f8765f;
+}
+
+.newsletter-signup p{
+    font-size: 25px;
+}
+
+.newsletter-signup input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.newsletter-signup button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.newsletter-signup button:hover{
+    background-color: white;
+    color: #f8765f;
+}
+
+footer{
+    margin-top: 220px;
+    height: 50vh;
+    padding: 30px;
+}
+
+.end{
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.quick-links h1{
+    color: #f8765f;
+}
+
+.quick-links a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.social-media h1{
+    color: #f8765f;
+}
+.social-media a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.social-media i{
+    color: white;
+    font-size:25px;
+}
+
+.contact-info h1{
+    color: #f8765f;
+}
+.policy{
+    margin-top: 90px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.policy i{
+    color: red;
+
+}
